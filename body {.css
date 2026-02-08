@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #004a99; /* School primary color */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #003366; /* Darker shade for contrast */
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #001f3f;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #003366;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.aligned-image {
+    float: left; /* Aligns image to the left, text flows to the right */
+    margin-right: 15px; /* Adds space between the image and the text */
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+}
+.container::after {
+    content: "";
+    clear: both;
+    display: table; /* This "clearfix" ensures the container wraps around the floated elements */
+}
